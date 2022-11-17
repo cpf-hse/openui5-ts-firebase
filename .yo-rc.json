@@ -1,0 +1,15 @@
+{
+  "generator-ui5-ts-app": {
+    "application": "wcintegration",
+    "namespace": "com.hse",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.108.0",
+    "author": "Christian Pfisterer",
+    "initrepo": true,
+    "tstypes": "@openui5/ts-types-esm",
+    "tstypesVersion": "1.108.0",
+    "appId": "com.hse.wcintegration",
+    "appURI": "com/hse/wcintegration",
+    "setupCompleted": true
+  }
+}
