@@ -3,7 +3,7 @@
 import MessageBox from "sap/m/MessageBox";
 import BaseController from "./BaseController";
 import formatter from "../model/formatter";
-import { initializeApp, getAuth } from "app/ext_libs/firebase";
+import { initializeApp, getAuth } from "wcintegration/lib/firebase";
 
 /**
  * @namespace com.hse.wcintegration.controller

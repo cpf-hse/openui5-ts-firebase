@@ -16,7 +16,7 @@
 		"typeRoots": ["./node_modules/@types", "./node_modules/@openui5/ts-types-esm"],
 		"paths": {
 			"com/hse/wcintegration/*": ["./webapp/*"],
-			"app/ext_libs/*": ["./lib/*"]
+			"wcintegration/lib/*": ["./lib/*"]
 		}
 	},
 	"include": ["./webapp/**/*", "./lib/**/*"]
