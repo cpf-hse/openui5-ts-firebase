@@ -1,8 +1,6 @@
 import UIComponent from "sap/ui/core/UIComponent";
 import { support } from "sap/ui/Device";
 import models from "./model/models";
-import { initializeApp, FirebaseOptions } from "firebase/app";
-import { getAuth } from "firebase/auth";
 
 /**
  * @namespace com.hse.wcintegration
@@ -22,19 +20,6 @@ export default class Component extends UIComponent {
 
 		// create the views based on the url/hash
 		this.getRouter().initialize();
-
-		const firebaseConfig: FirebaseOptions = {
-			apiKey: "AIzaSyBtRIMLkSVfptH4ASinlEfnKhP-mBwUV24",
-			authDomain: "react-register-12564.firebaseapp.com",
-			projectId: "react-register-12564",
-			storageBucket: "react-register-12564.appspot.com",
-			messagingSenderId: "1074586181097",
-			appId: "1:1074586181097:web:47236fd450006cd1fabf78",
-			measurementId: "G-JSN76LC2EC",
-		};
-
-		const firebaseApp = initializeApp(firebaseConfig);
-		const firebaseAuth = getAuth(firebaseApp);
 	}
 
 	/**
