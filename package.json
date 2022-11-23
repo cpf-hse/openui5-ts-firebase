@@ -5,7 +5,7 @@
   "author": "Christian Pfisterer",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "ui5 build --clean-dest",
+    "build": "ui5 build --config ui5.yaml --all --clean-dest",
     "build:opt": "ui5 build self-contained --clean-dest --all",
     "start": "ui5 serve --port 8080 -o index.html",
     "start:dist": "ui5 serve  --port 8080 -o index.html --config ui5-dist.yaml",
@@ -27,7 +27,8 @@
     "dependencies": [
       "ui5-middleware-livereload",
       "ui5-tooling-transpile",
-      "ui5-tooling-modules"
+      "ui5-tooling-modules",
+      "firebase"
     ]
   },
   "dependencies": {
