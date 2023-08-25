@@ -1,14 +1,15 @@
-specVersion: "2.6"
+specVersion: "3.0"
 metadata:
     name: com.hse.wcintegration
 type: application
 framework:
     name: OpenUI5
-    version: "1.108.1"
+    version: "1.117.1"
     libraries:
         - name: sap.m
         - name: sap.ui.core
         - name: sap.ui.unified
+        - name: sap.ui.webc.fiori
         - name: sap.ui.webc.main
         - name: themelib_sap_horizon
 builder:
@@ -16,7 +17,7 @@ builder:
         - name: ui5-tooling-transpile-task
           afterTask: replaceVersion
           configuration: &transpileConfig
-              removeConsoleStatements: true
+              removeConsoleStatements: false
               transpileAsync: true
               transpileTypeScript: true
         - name: ui5-tooling-modules-task
@@ -33,9 +34,4 @@ server:
           configuration:
               addToNamespace: true
         - name: ui5-middleware-livereload
-          afterMiddleware: ui5-tooling-modules-middleware
-          configuration:
-              debug: true
-              extraExts: "xml,json,properties"
-              port: 35729
-              path: "webapp"
+          afterMiddleware: compression
