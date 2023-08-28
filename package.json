@@ -25,6 +25,6 @@
   },
   "dependencies": {
     "firebase": "^10.3.0",
-    "valibot": "^0.11.1"
+    "valibot": "^0.13.1"
   }
 }

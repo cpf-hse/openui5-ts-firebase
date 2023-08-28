@@ -4,7 +4,7 @@ import MessageBox from "sap/m/MessageBox";
 import BaseController from "./BaseController";
 import formatter from "../model/formatter";
 import { initializeApp, getAuth } from "wcintegration/lib/firebase";
-import { email, maxLength, minLength, parse, string, endsWith } from "valibot";
+import { email, string, endsWith } from "valibot";
 
 /**
  * @namespace com.hse.wcintegration.controller
